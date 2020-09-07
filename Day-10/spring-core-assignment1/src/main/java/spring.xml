@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+           
+ 	<bean id="point" class="com.manipal.spring_core_assignment1.model.Point">
+		<property name="x" value="5"/>
+		<property name="y" value="5"/>
+	</bean>       
+	
+	<bean id="line" class="com.manipal.spring_core_assignment1.model.Line">
+		<property name="point1" ref="pr1"/>
+		<property name="point2" ref="pr2"/>
+	</bean>   
+	
+	<bean id="triangle" class="com.manipal.spring_core_assignment1.model.Triangle">
+		<property name="p1" ref="pt1" />
+		<property name="p2" ref="pt2" />
+		<property name="p3" ref="pt3" />
+	</bean> 
+	
+ 	<bean id="pr1" class="com.manipal.spring_core_assignment1.model.Point">
+		<property name="x" value="5"/>
+		<property name="y" value="6"/>
+	</bean>       
+ 	<bean id="pr2" class="com.manipal.spring_core_assignment1.model.Point">
+		<property name="x" value="7"/>
+		<property name="y" value="8"/>
+	</bean>     
+	
+ 	<bean id="pt1" class="com.manipal.spring_core_assignment1.model.Point">
+		<property name="x" value="7"/>
+		<property name="y" value="7"/>
+	</bean>       
+ 	<bean id="pt2" class="com.manipal.spring_core_assignment1.model.Point">
+		<property name="x" value="9"/>
+		<property name="y" value="9"/>
+	</bean>   
+ 	<bean id="pt3" class="com.manipal.spring_core_assignment1.model.Point">
+		<property name="x" value="10"/>
+		<property name="y" value="11"/>
+	</bean> 
+           
+</beans>
